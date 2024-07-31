@@ -1,0 +1,48 @@
+.ourStory {
+  padding: 42px 0 42px 135px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.ourStory-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ourStory-info h1 {
+  font-size: 54px;
+  line-height: 64px;
+  letter-spacing: 6%;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.ourStory-info p {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+}
+
+.ourStory-info p:nth-child(2) {
+  margin-top: 40px;
+}
+
+.ourStory-info p:last-child {
+  margin-top: 24px;
+}
+
+.ourStory-img {
+  width: 100%;
+}
+
+.ourStory-img img {
+  width: 100%;
+  border-radius: 40px 0 0 40px;
+}

@@ -1,0 +1,38 @@
+header {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 230px;
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.header-info > p {
+  /* font-family: 'Poppins regular'; */
+  font-size: 14px;
+  line-height: 21px;
+  color: #FAFAFA;
+}
+
+.header-info a {
+  /* font-family: "Poppins semibold"; */
+  font-size: 14px;
+  line-height: 24px;
+  color: #FAFAFA;
+  text-decoration: underline;
+}
+
+header > select {
+  background: #000;
+  color: #FAFAFA;
+  border: none;
+  outline: none;
+}

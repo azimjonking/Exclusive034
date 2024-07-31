@@ -1,0 +1,128 @@
+.contact {
+  padding-top: 80px;
+  padding-bottom: 140px;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 30px;
+}
+
+.contact-connect {
+  padding: 40px 35px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  border-radius: 4px;
+  box-shadow: 0 1px 13px 0 #00000010;
+}
+
+.contact-connect .line {
+  width: 100%;
+  height: 1px;
+  background: #000000;
+  border-radius: 5px;
+}
+
+.contact-connect .call,
+.contact-connect .write {
+  width: 100%;
+}
+
+.contact-connect .call-header,
+.contact-connect .write-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-connect .call-header .icon,
+.contact-connect .write-header .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #DB4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 20px; 
+}
+
+.contact-connect .call-header > h3,
+.contact-connect .write-header > h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-weight: 500;
+}
+
+.contact-connect .call > p,
+.contact-connect .write > p {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+}
+
+.contact-connect .call > a,
+.contact-connect .write > a {
+  display: block;
+  margin-top: 16px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+}
+
+.contact form {
+  width: 100%;
+  padding: 40px 35px;
+  border-radius: 4px;
+  box-shadow: 0 1px 13px 0 #00000010;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact form .form-group {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.contact form .form-group input,
+.contact form textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border: none;
+  outline: none;
+  background: #F5F5F5;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: #DB4444;
+}
+
+.contact form textarea {
+  height: 200px;
+  resize: none;
+}
+
+.contact form button {
+  border-radius: 4px;
+  padding: 16px 48px;
+  background: #DB4444;
+  color: #FAFAFA;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+}

@@ -1,0 +1,109 @@
+.login {
+  width: 100%;
+  padding: 60px 130px 130px 0;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 120px;
+}
+
+.login-img {
+  width: 100%;
+}
+
+.login-img img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form h2 {
+  font-size: 36px;
+  line-height: 30px;
+  letter-spacing: 4%;
+  font-weight: bold;
+  color: #000;
+}
+
+.login-form p {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 48px;
+}
+
+.login-form .form-group {
+  position: relative;
+  display: grid;
+}
+
+.login-form .form-group input {
+  padding: 8px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #00000090;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+.login-form .form-group label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.login-form .form-group input:focus + label {
+  top: -25%;
+  transform: translateY(0%);
+}
+
+.login-form .form-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-form .form-btns .login-btn {
+  border-radius: 4px;
+  padding: 16px 45px;
+  background: #DB4444;
+  color: #FAFAFA;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form .form-btns a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #DB4444;
+}
+
+.login-form .login-link {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  opacity: 0.7;
+}
+
+.login-form .login-link a {
+  margin-left: 16px;
+  font-weight: 600;
+  color: #000000;
+  opacity: 1;
+}

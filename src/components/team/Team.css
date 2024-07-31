@@ -1,0 +1,61 @@
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.team .worker {
+  width: 100%;
+}
+
+.team .worker .img {
+  padding: 35px 65px 0;
+  width: 100%;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  background: #F5F5F5;
+  border-radius: 4px;
+}
+
+.team .worker .img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.team .worker h3 {
+  margin-top: 32px;
+  font-size: 32px;
+  line-height: 30px;
+  letter-spacing: 4%;
+  color: #000000;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.team .worker p {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.team .worker ul {
+  margin-top: 16px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.team .worker ul li a {
+  color: #00000090;
+  text-decoration: none;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.team .worker ul li a:hover {
+  color: #000000;
+}

@@ -1,0 +1,81 @@
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  letter-spacing: 3%;
+  color: #000;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+nav ul li a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
+}
+
+.navbar-btns {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-search {
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  background: #F5F5F5;
+}
+
+.navbar-search input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+}
+
+.navbar-search button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar-btns .wishlist-icon,
+.navbar-btns .cart-icon  {
+  font-size: 28px;
+  color: #000;
+}

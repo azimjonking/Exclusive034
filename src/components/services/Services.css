@@ -1,0 +1,64 @@
+.services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
+}
+
+.services .content {
+  width: 100%;
+  padding: 30px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.services .content .icon-div {
+  padding: 11px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 46, 48, 0.3);
+  transition: all 0.3s ease;
+}
+
+.services .content .icon-border {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  transition: all 0.3s ease;
+}
+
+.services .content .icon-border img {
+  transition: all 0.3s ease;
+}
+
+.services .content h3  {
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 4%; 
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.services .content p {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  text-align: center;
+  transition: all 0.3s ease;
+}
