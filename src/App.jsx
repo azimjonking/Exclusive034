@@ -13,7 +13,15 @@ import Signup from "./pages/signup/Signup"
 import Wishlist from "./pages/wishlist/Wishlist"
 import Cart from "./pages/cart/Cart"
 import Login from './pages/login/Login';
+import Account from './pages/account/Account'
 import Error from './pages/error/Error';
+
+
+import MyProfile from "./components/myprofile/MyProfile"
+import AddressBook from "./components/addressBook/AddressBook"
+import MyPayment from "./components/mypayment/MyPayment"
+import MyReturns from "./components/myreturns/MyReturns"
+import MyCancellations from "./components/mycancellations/MyCancellations"
 
 function App() {
   return (
@@ -28,6 +36,13 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/wishlist' element={<Wishlist />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/account' element={<Account />}>
+          <Route path='profile' element={<MyProfile />} />
+          <Route path="addressbook" element={<AddressBook />} />
+          <Route path="payment" element={<MyPayment />} />
+          <Route path="returns" element={<MyReturns />} />
+          <Route path="cancellations" element={<MyCancellations />} />
+        </Route>
         <Route path='*' element={<Error />} />
       </Routes>
       <Footer />

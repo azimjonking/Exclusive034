@@ -40,7 +40,7 @@ function Footer() {
 
           <ul>
             <li>
-              <Link to="/acoount">Account</Link>
+              <Link to="/account">Account</Link>
             </li>
             <li>
               <Link to="/login">Login / </Link><Link to="/signup">Register</Link>

@@ -1,0 +1,40 @@
+.account {
+  padding-top: 80px;
+  padding-bottom: 140px;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 100px;
+}
+
+.account-sidebar {
+  width: 100%;
+}
+
+.account-sidebar h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+.account-sidebar ul {
+  list-style: none;
+  margin-top: 16px;
+  margin-left: 35px;
+  margin-bottom: 24px;
+}
+
+.account-sidebar ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.account-sidebar ul li a.active {
+  color: #DB4444;
+  opacity: 1;
+}
