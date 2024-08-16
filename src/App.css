@@ -1,0 +1,25 @@
+.title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #DB4444;
+  display: flex;
+  align-items: center;
+}
+.title span {
+  margin-right: 16px;
+  width: 20px;
+  height: 40px;
+  border-radius: 4px;
+  background: #DB4444;
+}
+
+.subtitle {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+  text-align: left;
+}

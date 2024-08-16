@@ -1,8 +1,11 @@
 import "./Home.css";
+import Featured from '../../components/featured/Featured';
+import Services from '../../components/services/Services';
 function Home() {
   return (
-    <div className='container'>
-      <h1>Home</h1>
+    <div>
+      <Featured />
+      <Services />
     </div>
   );
 }

@@ -109,7 +109,7 @@ const Checkout = () => {
               <img src="./src/assets/payment.png" alt="Payment" />
             </label>
             <label>
-              <input type="radio" name="payment" />
+              <input type="radio" name="payment" checked />
               <div className="check">
                 <span></span>
               </div>
