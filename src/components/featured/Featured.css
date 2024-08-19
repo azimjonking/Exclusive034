@@ -21,7 +21,9 @@
 }
 
 .featured-container .featured-content {
-  background: #000000;
+  position: relative;
+  overflow: hidden;
+  background: #0D0D0D;
 }
 
 .featured-container .left .ps,
@@ -36,12 +38,33 @@
   justify-content: flex-start;
 }
 
+.featured-container .featured-content img {
+  position: absolute;
+}
+
+.featured-container .left .ps img,
+.featured-container .right .speakers img,
+.featured-container .right .perfume img {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+.featured-container .right .collection img {
+  bottom: 0;
+  right: 0;
+  user-select: none;
+}
+
 .featured-container .featured-content .text {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  position: relative;
+  z-index: 2;
 }
 
 .featured-container .featured-content .text h3 {

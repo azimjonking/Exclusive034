@@ -1,0 +1,96 @@
+.month-product {
+  width: 100%;
+  margin-top: 140px;
+  margin-bottom: 71px;
+  position: relative;
+  background: #000;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.month-product__info {
+  padding: 69px 0 69px 56px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.month-product__info h4 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #00ff66;
+}
+
+.month-product__info h1 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: #fafafa;
+}
+
+.month-product__info .month-deadline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.month-product__info .month-deadline div {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.month-product__info .month-deadline div p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+.month-product__info .month-deadline div span {
+  font-size: 11px;
+  line-height: 18px;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+
+.month-product__info button {
+  padding: 16px 48px;
+  border: none;
+  border-radius: 4px;
+  background: #00FF66;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #FAFAFA;
+  transition: all 0.3s ease;
+}
+
+.month-product__img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, rgb(128, 128, 128, 0.6) 0%, black 80%, black 100%);
+}
+
+.month-product__img img {
+  width: 75%;
+  object-fit: contain;
+}

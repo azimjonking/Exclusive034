@@ -16,6 +16,7 @@ import Login from './pages/login/Login';
 import Account from './pages/account/Account'
 import Error from './pages/error/Error';
 import Checkout from './pages/checkout/Checkout';
+import Details from './pages/details/Details'
 
 
 import MyProfile from "./components/myprofile/MyProfile"
@@ -37,6 +38,9 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/wishlist' element={<Wishlist />} />
         <Route path='/cart' element={<Cart />} />
+
+        <Route path='/details' element={<Details />} />
+
         <Route path='/checkout' element={<Checkout />} />
         <Route path='/account' element={<Account />}>
           <Route path='profile' element={<MyProfile />} />

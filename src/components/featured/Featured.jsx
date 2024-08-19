@@ -18,10 +18,10 @@ const Featured = () => {
       <div className="featured-container">
         <div className="left">
           <div className="featured-content ps">
-            {/* <img src={psImg} alt="Play Station 5" /> */}
+            <img src={psImg} alt="Play Station 5" />
             <div className="text">
               <h3>PlayStation 5</h3>
-              <p>Black and White version of the PS5 coming out on sale.</p>
+              <p>Black and White version of the PS5 <br />coming out on sale.</p>
               <Link to="/">Shop Now</Link>
             </div>
           </div>
@@ -29,16 +29,16 @@ const Featured = () => {
 
         <div className="right">
           <div className="featured-content collection">
-            {/* <img src={collectionImg} alt="women's collection" /> */}
+            <img src={collectionImg} alt="women's collection" />
             <div className="text">
               <h3>Women’s Collections</h3>
-              <p>Featured woman collections that give you another vibe.</p>
+              <p>Featured woman collections that give <br />you another vibe.</p>
               <Link to="/">Shop Now</Link>
             </div>
           </div>
 
           <div className="featured-content speakers">
-            {/* <img src={speakersImg} alt="speakers" /> */}
+            <img src={speakersImg} alt="speakers" />
             <div className="text">
               <h3>Speakers</h3>
               <p>Amazon wireless speakers</p>
@@ -47,7 +47,7 @@ const Featured = () => {
           </div>
 
           <div className="featured-content perfume">
-            {/* <img src={perfumeImg} alt="perfume" /> */}
+            <img src={perfumeImg} alt="perfume" />
             <div className="text">
               <h3>Perfume</h3>
               <p>GUCCI INTENSE OUD EDP</p>
