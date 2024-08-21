@@ -1,0 +1,252 @@
+.detail {
+  padding-top: 80px;
+  padding-bottom: 140px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 70px;
+}
+
+/* details image start */
+
+.detail .detail-images {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 30px;
+}
+
+.detail .detail-images .images-options {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+
+.detail .detail-images .images-options .image {
+  width: 100%;
+  min-height: 138px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+  border-radius: 4px;
+}
+
+.detail .detail-images .images-options .image img {
+  width: 60%;
+}
+
+.detail .detail-images .show-image {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+  border-radius: 4px;
+}
+
+.detail .detail-images .show-image img {
+  width: 80%;
+}
+
+/* details image end */
+
+
+
+/* details info start */
+
+.detail .detail-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.detail .detail-info > h2 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+
+.detail .detail-info .detail-reviews {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.detail .detail-info .detail-reviews .stars {
+  display: flex;
+  align-items: center;
+  font-size: 20px
+}
+
+.detail .detail-info .detail-reviews span:nth-child(2) {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.detail .detail-info .detail-reviews span:nth-child(3) {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Poppins', sans-serif;
+  color: #00FF66;
+  opacity: 0.6;
+}
+
+.detail .detail-info > .price {
+  margin-top: 16px;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+}
+
+.detail .detail-info > .desc {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+}
+
+.detail .detail-info > .line {
+  margin: 24px 0;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  background: #00000050;
+}
+
+.detail .detail-info > .color {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail .detail-info > .color p {
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+  margin-right: 24px;
+  color: #000000;
+}
+
+.detail .detail-info > .color label {
+  display: flex;
+  align-items: center;
+}
+
+.detail .detail-info > .color label input {
+  display: none;
+}
+
+.detail .detail-info > .color label span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.detail .detail-info > .color label span.cornflowerblue {
+  border: 2px solid cornflowerblue;
+}
+
+.detail .detail-info > .color label span.indianred {
+  border: 2px solid indianred;
+}
+
+.detail .detail-info > .color label input:checked + span {
+  border: 2px solid #000000;
+  padding: 2px;
+}
+
+.detail .detail-info > .color label span span {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.detail .detail-info > .color label span.cornflowerblue span {
+  background: cornflowerblue;
+}
+
+.detail .detail-info > .color label span.indianred span {
+  background: indianred;
+}
+
+.detail .detail-info > .size {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.detail .detail-info > .size p {
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+  margin-right: 24px;
+  color: #000000;
+}
+
+.detail .detail-info > .size label {
+  display: flex;
+  align-items: center;
+}
+
+.detail .detail-info > .size label input {
+  display: none;
+}
+
+
+.detail .detail-info > .size label span {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #00000050;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  background: none;
+  cursor: pointer;
+}
+
+
+.detail .detail-info > .size label input:checked + span {
+  color: #FAFAFA;
+  background: #DB4444;
+  border: 1px solid #DB4444;
+}
+
+
+
+/* details info end */
