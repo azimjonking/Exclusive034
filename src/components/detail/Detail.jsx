@@ -1,5 +1,8 @@
 import "./Detail.css";
 import { FaStar } from "react-icons/fa";
+import { FaMinus, FaPlus, FaRegHeart } from "react-icons/fa6";
+import { TbTruckDelivery } from "react-icons/tb";
+import { GrPowerCycle } from "react-icons/gr";
 
 const Detail = () => {
   return (
@@ -82,6 +85,46 @@ const Detail = () => {
             <input type="radio" name='size' />
             <span>XL</span>
           </label>
+        </div>
+
+        <div className='count-div'>
+          <div className="count">
+            <button className='dec'>
+              <FaMinus className='icon' />
+            </button>
+            <span>1</span>
+            <button className='inc'>
+              <FaPlus className='icon' />
+            </button>
+          </div>
+          <button className='buynow'>Buy Now</button>
+          <button className='wishlist'>
+            <FaRegHeart className='icon' />
+          </button>
+        </div>
+
+        <div className="delivery">
+
+          <div className='fast-delivery'>
+            <div className="icon-div">
+              <TbTruckDelivery className='icon' />
+            </div>
+            <div className="info">
+              <h3>Free Delivery</h3>
+              <p>Enter your postal code for Delivery Availability</p>
+            </div>
+          </div>
+
+          <div className='return-delivery'>
+            <div className="icon-div">
+              <GrPowerCycle className='icon' />
+            </div>
+            <div className="info">
+              <h3>Return Delivery</h3>
+              <p>Free 30 Days Delivery Returns. Details</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
