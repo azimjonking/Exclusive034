@@ -55,6 +55,12 @@
   flex-direction: column;
   gap: 16px;
   background: #FFFFFF;
+  clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
+  transition: all 0.3s ease;
+}
+
+.home-main .category-list > ul li:hover > ul {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .home-main .category-list > ul li > ul li {

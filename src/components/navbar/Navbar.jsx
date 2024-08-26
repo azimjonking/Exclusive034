@@ -1,10 +1,16 @@
 import "./Navbar.css";
+import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
-import { FaRegHeart } from "react-icons/fa6";
+import { FaRegHeart, FaRegUser, FaRegStar } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
+import { LuShoppingBag } from "react-icons/lu";
+import { MdOutlineCancel } from "react-icons/md";
+import { SlLogout } from "react-icons/sl";
 
 function Navbar() {
+  const [showAccount, setShowAccount] = useState(false);
+
   return (
     <div className="navbar container">
       <Link to="/" className="logo">
@@ -42,6 +48,36 @@ function Navbar() {
         <Link to="/cart">
           <IoCartOutline className="cart-icon" />
         </Link>
+
+        <button
+          className={showAccount ? "active" : undefined}
+          onClick={() => setShowAccount(!showAccount)}
+        >
+          <FaRegUser className="user-icon" />
+
+          <div>
+            <Link to="/account">
+              <FaRegUser className="user-icon" />
+              <span>Manage My Account</span>
+            </Link>
+            <Link to="/account">
+              <LuShoppingBag className="user-icon" />
+              <span>My Order</span>
+            </Link>
+            <Link to="/account">
+              <MdOutlineCancel className="user-icon" />
+              <span>My Cancellations</span>
+            </Link>
+            <Link to="/account">
+              <FaRegStar className="user-icon" />
+              <span>My Reviews</span>
+            </Link>
+            <Link to="/">
+              <SlLogout className="user-icon" />
+              <span>Logout</span>
+            </Link>
+          </div>
+        </button>
       </div>
     </div>
   );
