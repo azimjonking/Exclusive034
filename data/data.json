@@ -1,0 +1,80 @@
+{
+  "categories": [
+    {
+      "name": "Phones",
+      "icon": "./assets/phones.png"
+    },
+    {
+      "name": "Computers",
+      "icon": "./assets/computers.png"
+    },
+    {
+      "name": "SmartWatch",
+      "icon": "./assets/smartwatch.png"
+    },
+    {
+      "name": "Camera",
+      "icon": "./assets/camera.png"
+    },
+    {
+      "name": "HeadPhones",
+      "icon": "./assets/headphones.png"
+    },
+    {
+      "name": "Gaming",
+      "icon": "./assets/gamepad.png"
+    },
+    {
+      "name": "Books",
+      "icon": "./assets/books.png"
+    }
+  ],
+
+  "bestProducts": [
+    {
+      "id": 1,
+      "images": ["./assets/coat.png", "image2", "image3", "image4", "image5"],
+      "name": "The north coat",
+      "price": 360,
+      "discountPercentage": 27,
+      "discountPrice": 260,
+      "stars": 65
+    },
+    {
+      "id": 2,
+      "images": ["./assets/bag.png", "image2", "image3", "image4", "image5"],
+      "name": "Gucci duffle bag",
+      "price": 1160,
+      "discountPercentage": 27,
+      "discountPrice": 960,
+      "stars": 65
+    },
+    {
+      "id": 3,
+      "images": ["./assets/cooler.png", "image2", "image3", "image4", "image5"],
+      "name": "RGB liquid CPU Cooler",
+      "price": 170,
+      "discountPercentage": 30,
+      "discountPrice": 160,
+      "stars": 65
+    },
+    {
+      "id": 4,
+      "images": ["./assets/bookshelf.png", "image2", "image3", "image4", "image5"],
+      "name": "Small BookShelf",
+      "price": 460,
+      "discountPercentage": 27,
+      "discountPrice": 360,
+      "stars": 65
+    },
+    {
+      "id": 5,
+      "images": ["./assets/bookshelf.png", "image2", "image3", "image4", "image5"],
+      "name": "Steve Jobs",
+      "price": 12,
+      "discountPercentage": 27,
+      "discountPrice": 9,
+      "stars": 85
+    }
+  ]
+}
