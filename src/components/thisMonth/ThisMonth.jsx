@@ -1,7 +1,9 @@
 import "./ThisMonth.css";
 import BestSellingProduct from './bestSellingProduct/BestSellingProduct';
 
-const ThisMonth = () => {
+const ThisMonth = ({ bestProductsData}) => {
+
+  console.log(bestProductsData);
   return (
     <>
       <div className='container'>
