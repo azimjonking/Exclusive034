@@ -60,7 +60,13 @@
     },
     {
       "id": 4,
-      "images": ["./assets/bookshelf.png", "image2", "image3", "image4", "image5"],
+      "images": [
+        "./assets/bookshelf.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
       "name": "Small BookShelf",
       "price": 460,
       "discountPercentage": 27,
@@ -69,12 +75,96 @@
     },
     {
       "id": 5,
-      "images": ["./assets/bookshelf.png", "image2", "image3", "image4", "image5"],
+      "images": [
+        "./assets/bookshelf.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
       "name": "Steve Jobs",
       "price": 12,
       "discountPercentage": 27,
       "discountPrice": 9,
       "stars": 85
+    }
+  ],
+
+  "flashSales": [
+    {
+      "id": 1,
+      "images": [
+        "./assets/flashsales/console.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "HAVIT HV-G92 Gamepad",
+      "price": 160,
+      "discountPercentage": 40,
+      "discountPrice": 120,
+      "stars": 88
+    },
+    {
+      "id": 2,
+      "images": [
+        "./assets/flashsales/keyboard.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "AK-900 Wired Keyboard",
+      "price": 116,
+      "discountPercentage": 35,
+      "discountPrice": 96,
+      "stars": 75
+    },
+    {
+      "id": 3,
+      "images": [
+        "./assets/flashsales/monitor.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "IPS LCD Gaming Monitor",
+      "price": 400,
+      "discountPercentage": 30,
+      "discountPrice": 370,
+      "stars": 99
+    },
+    {
+      "id": 4,
+      "images": [
+        "./assets/flashsales/chair.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "S-Series Comfort Chair ",
+      "price": 400,
+      "discountPercentage": 25,
+      "discountPrice": 375,
+      "stars": 99
+    },
+    {
+      "id": 5,
+      "images": [
+        "./assets/flashsales/car.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "Kids Electric Car",
+      "price": 960,
+      "discountPercentage": 10,
+      "discountPrice": 864,
+      "stars": 65
     }
   ]
 }

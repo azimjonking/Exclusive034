@@ -1,6 +1,5 @@
 import "./App.css";
-import { useState, useEffect } from "react";
-import useFetch from "./hooks/useFetch";
+import { useFetch } from "./hooks/useFetch";
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/header/Header";
@@ -29,6 +28,7 @@ import MyCancellations from "./components/mycancellations/MyCancellations";
 function App() {
   const categoryData = useFetch("http://localhost:3000/categories");
   const bestProductsData = useFetch("http://localhost:3000/bestProducts");
+  const flashSalesData = useFetch("http://localhost:3000/flashSales");
 
   return (
     <div className="App">
@@ -39,6 +39,7 @@ function App() {
           path="/"
           element={
             <Home
+              flashSalesData={flashSalesData}
               categoryData={categoryData}
               bestProductsData={bestProductsData}
             />
