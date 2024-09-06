@@ -166,5 +166,317 @@
       "discountPrice": 864,
       "stars": 65
     }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "images": [
+        "./assets/products/item-1.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "Breed Dry Dog Food",
+      "price": 100,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 35
+    },
+    {
+      "id": 2,
+      "images": [
+        "./assets/products/item-2.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "CANON EOS DSLR Camera",
+      "price": 360,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 95
+    },
+    {
+      "id": 3,
+      "images": [
+        "./assets/products/item-3.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "ASUS FHD Gaming Laptop",
+      "price": 700,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 325
+    },
+    {
+      "id": 4,
+      "images": [
+        "./assets/products/item-4.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "Curology Product Set ",
+      "price": 500,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 145
+    },
+    {
+      "id": 5,
+      "images": [
+        "./assets/products/item-5.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "Kids Electric Car",
+      "price": 960,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 65
+    },
+    {
+      "id": 6,
+      "images": [
+        "./assets/products/item-6.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "Jr. Zoom Soccer Cleats",
+      "price": 116,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 35
+    },
+    {
+      "id": 7,
+      "images": [
+        "./assets/products/item-7.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "GP11 Shooter USB Gamepad",
+      "price": 660,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 55
+    },
+    {
+      "id": 8,
+      "images": [
+        "./assets/products/item-8.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "Quilted Satin Jacket",
+      "price": 660,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 55
+    }
+  ],
+
+  "wishlist": [
+    {
+      "id": 1,
+      "images": [
+        "./assets/wishlist/bag.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "Gucci duffle bag",
+      "price": 960,
+      "discountPercentage": 35,
+      "discountPrice": 1160,
+      "stars": null
+    },
+    {
+      "id": 2,
+      "images": [
+        "./assets/wishlist/cooler.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "RGB liquid CPU Cooler",
+      "price": 1960,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": null
+    },
+    {
+      "id": 3,
+      "images": [
+        "./assets/wishlist/gamepad.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "GP11 Shooter USB Gamepad",
+      "price": 550,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": null
+    },
+    {
+      "id": 4,
+      "images": [
+        "./assets/wishlist/jacked.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "Quilted Satin Jacket",
+      "price": 750,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": null
+    }
+  ],
+
+  "recommended": [
+    {
+      "id": 1,
+      "images": [
+        "./assets/recommended/laptop.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "ASUS FHD Gaming Laptop",
+      "price": 1160,
+      "discountPercentage": 35,
+      "discountPrice": 960,
+      "stars": 65
+    },
+    {
+      "id": 2,
+      "images": [
+        "./assets/recommended/monitor.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "IPS LCD Gaming Monitor",
+      "price": 1160,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 65
+    },
+    {
+      "id": 3,
+      "images": [
+        "./assets/recommended/gamepad.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "HAVIT HV-G92 Gamepad",
+      "price": 560,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 65
+    },
+    {
+      "id": 4,
+      "images": [
+        "./assets/recommended/keyboard.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "AK-900 Wired Keyboard",
+      "price": 200,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 65
+    }
+  ],
+
+  "reletedItems": [
+    {
+      "id": 1,
+      "images": [
+        "./assets/relatedItems/laptop.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "ASUS FHD Gaming Laptop",
+      "price": 1160,
+      "discountPercentage": 35,
+      "discountPrice": 960,
+      "stars": 65
+    },
+    {
+      "id": 2,
+      "images": [
+        "./assets/relatedItems/monitor.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "IPS LCD Gaming Monitor",
+      "price": 1160,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 65
+    },
+    {
+      "id": 3,
+      "images": [
+        "./assets/relatedItems/gamepad.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "HAVIT HV-G92 Gamepad",
+      "price": 560,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 65
+    },
+    {
+      "id": 4,
+      "images": [
+        "./assets/relatedItems/keyboard.png",
+        "image2",
+        "image3",
+        "image4",
+        "image5"
+      ],
+      "name": "AK-900 Wired Keyboard",
+      "price": 200,
+      "discountPercentage": null,
+      "discountPrice": null,
+      "stars": 65
+    }
   ]
 }

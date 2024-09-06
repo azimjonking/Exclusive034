@@ -29,6 +29,10 @@ function App() {
   const categoryData = useFetch("http://localhost:3000/categories");
   const bestProductsData = useFetch("http://localhost:3000/bestProducts");
   const flashSalesData = useFetch("http://localhost:3000/flashSales");
+  const productsData = useFetch("http://localhost:3000/products");
+  const wishlistData = useFetch("http://localhost:3000/wishlist");
+  const recommendedData = useFetch("http://localhost:3000/recommended");
+  const relatedData = useFetch("http://localhost:3000/reletedItems");
 
   return (
     <div className="App">
@@ -42,6 +46,7 @@ function App() {
               flashSalesData={flashSalesData}
               categoryData={categoryData}
               bestProductsData={bestProductsData}
+              productsData={productsData}
             />
           }
         />
@@ -49,10 +54,21 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/wishlist" element={<Wishlist />} />
+        <Route
+          path="/wishlist"
+          element={
+            <Wishlist
+              wishlistData={wishlistData}
+              recommendedData={recommendedData}
+            />
+          }
+        />
         <Route path="/cart" element={<Cart />} />
 
-        <Route path="/details" element={<Details />} />
+        <Route
+          path="/details"
+          element={<Details relatedData={relatedData} />}
+        />
 
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/account" element={<Account />}>

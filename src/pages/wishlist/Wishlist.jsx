@@ -1,10 +1,13 @@
 import "./Wishlist.css";
+import WishlistItems from "../../components/wishlist/WishlistItems";
+import Recommend from "../../components/recommend/Recommend";
 
-const Wishlist = () => {
+const Wishlist = ({ wishlistData, recommendedData }) => {
   return (
-    <div className='container'>
-      <h1>Wishlist</h1>
-    </div>
+    <>
+      <WishlistItems wishlistData={wishlistData} />
+      <Recommend recommendedData={recommendedData} />
+    </>
   );
 };
 
