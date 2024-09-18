@@ -1,7 +1,9 @@
 import "./FlashSales.css";
+import { useContext } from "react";
+import DataContext from "../../context/DataContext";
 
-const FlashSales = ({ flashSalesData }) => {
-  const { data, isPending, error } = flashSalesData;
+const FlashSales = () => {
+  const { data, isPending, error } = useContext(DataContext).flashSalesData;
 
   return (
     <>

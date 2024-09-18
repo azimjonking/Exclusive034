@@ -1,10 +1,6 @@
 import "./App.css";
 import { useFetch } from "./hooks/useFetch";
-import { Routes, Route } from "react-router-dom";
-
-import Header from "./components/header/Header";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // import pages
 import Home from "./pages/home/Home";
@@ -24,6 +20,10 @@ import AddressBook from "./components/addressBook/AddressBook";
 import MyPayment from "./components/mypayment/MyPayment";
 import MyReturns from "./components/myreturns/MyReturns";
 import MyCancellations from "./components/mycancellations/MyCancellations";
+import AppLayout from "./layout/AppLayout";
+
+// import context
+import DataContext from "./context/DataContext";
 
 function App() {
   const categoryData = useFetch("http://localhost:3000/categories");
@@ -34,53 +34,93 @@ function App() {
   const recommendedData = useFetch("http://localhost:3000/recommended");
   const relatedData = useFetch("http://localhost:3000/reletedItems");
 
+  const data = {
+    categoryData,
+    bestProductsData,
+    flashSalesData,
+    productsData,
+    wishlistData,
+    recommendedData,
+    relatedData,
+  };
+
+  const routes = createBrowserRouter([
+    {
+      path: "/",
+      errorElement: <Error />,
+      element: <AppLayout />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
+        },
+        {
+          path: "about",
+          element: <About />,
+        },
+        {
+          path: "signup",
+          element: <Signup />,
+        },
+        {
+          path: "login",
+          element: <Login />,
+        },
+        {
+          path: "wishlist",
+          element: <Wishlist recommendedData={recommendedData} />,
+        },
+        {
+          path: "cart",
+          element: <Cart />,
+        },
+        {
+          path: "details",
+          element: <Details relatedData={relatedData} />,
+        },
+        {
+          path: "checkout",
+          element: <Checkout />,
+        },
+        {
+          path: "account",
+          element: <Account />,
+          children: [
+            {
+              path: "profile",
+              element: <MyProfile />,
+            },
+            {
+              path: "addressbook",
+              element: <AddressBook />,
+            },
+            {
+              path: "payment",
+              element: <MyPayment />,
+            },
+            {
+              path: "returns",
+              element: <MyReturns />,
+            },
+            {
+              path: "cancellations",
+              element: <MyCancellations />,
+            },
+          ],
+        },
+      ],
+    },
+  ]);
+
   return (
     <div className="App">
-      <Header />
-      <Navbar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Home
-              flashSalesData={flashSalesData}
-              categoryData={categoryData}
-              bestProductsData={bestProductsData}
-              productsData={productsData}
-            />
-          }
-        />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route
-          path="/wishlist"
-          element={
-            <Wishlist
-              wishlistData={wishlistData}
-              recommendedData={recommendedData}
-            />
-          }
-        />
-        <Route path="/cart" element={<Cart />} />
-
-        <Route
-          path="/details"
-          element={<Details relatedData={relatedData} />}
-        />
-
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/account" element={<Account />}>
-          <Route path="profile" element={<MyProfile />} />
-          <Route path="addressbook" element={<AddressBook />} />
-          <Route path="payment" element={<MyPayment />} />
-          <Route path="returns" element={<MyReturns />} />
-          <Route path="cancellations" element={<MyCancellations />} />
-        </Route>
-        <Route path="*" element={<Error />} />
-      </Routes>
-      <Footer />
+      <DataContext.Provider value={data}>
+        <RouterProvider router={routes} />
+      </DataContext.Provider>
     </div>
   );
 }

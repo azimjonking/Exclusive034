@@ -6,19 +6,14 @@ import ThisMonth from "../../components/thisMonth/ThisMonth";
 import Categories from "../../components/categories/Categories";
 import FlashSales from "../../components/flashSales/FlashSales";
 import OurProducts from "../../components/ourProducts/OurProducts";
-function Home({
-  flashSalesData,
-  categoryData,
-  bestProductsData,
-  productsData,
-}) {
+function Home() {
   return (
     <div>
       <MainSection />
-      <FlashSales flashSalesData={flashSalesData} />
-      <Categories categoryData={categoryData} />
-      <ThisMonth bestProductsData={bestProductsData} />
-      <OurProducts productsData={productsData} />
+      <FlashSales />
+      <Categories />
+      <ThisMonth />
+      <OurProducts />
       <Featured />
       <Services />
     </div>

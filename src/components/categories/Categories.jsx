@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Categories.css";
+import DataContext from "../../context/DataContext";
 
-const Categories = ({ categoryData }) => {
-  const { data, isPending, error } = categoryData;
+const Categories = () => {
+  const { data, isPending, error } = useContext(DataContext).categoryData;
 
   return (
     <section className="container categories">

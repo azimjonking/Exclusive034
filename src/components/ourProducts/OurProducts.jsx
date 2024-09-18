@@ -1,7 +1,9 @@
 import "./OurProducts.css";
+import { useContext } from "react";
+import DataContext from "../../context/DataContext";
 
-const OurProducts = ({ productsData }) => {
-  const { data, isPending, error } = productsData;
+const OurProducts = () => {
+  const { data, isPending, error } = useContext(DataContext).productsData;
 
   return (
     <>

@@ -2,10 +2,10 @@ import "./Wishlist.css";
 import WishlistItems from "../../components/wishlist/WishlistItems";
 import Recommend from "../../components/recommend/Recommend";
 
-const Wishlist = ({ wishlistData, recommendedData }) => {
+const Wishlist = ({ recommendedData }) => {
   return (
     <>
-      <WishlistItems wishlistData={wishlistData} />
+      <WishlistItems />
       <Recommend recommendedData={recommendedData} />
     </>
   );

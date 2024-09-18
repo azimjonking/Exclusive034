@@ -1,7 +1,7 @@
 import "./Header.css";
 function Header() {
   return (
-    <header className='container'>
+    <header className="container">
       <div className="header-info">
         <p>
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!

@@ -1,7 +1,9 @@
 import "./WishlistItems.css";
+import { useContext } from "react";
+import DataContext from "../../context/DataContext";
 
-const WishlistItems = ({ wishlistData }) => {
-  const { data, isPending, error } = wishlistData;
+const WishlistItems = () => {
+  const { data, isPending, error } = useContext(DataContext).wishlistData;
 
   return (
     <div className="container wishlist">

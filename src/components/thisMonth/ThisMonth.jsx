@@ -1,8 +1,10 @@
 import "./ThisMonth.css";
 import BestSellingProduct from "./bestSellingProduct/BestSellingProduct";
+import { useContext } from "react";
+import DataContext from "../../context/DataContext";
 
-const ThisMonth = ({ bestProductsData }) => {
-  const { data, isPending, error } = bestProductsData;
+const ThisMonth = () => {
+  const { data, isPending, error } = useContext(DataContext).bestProductsData;
 
   return (
     <>
